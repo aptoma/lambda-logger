@@ -1,6 +1,6 @@
 {
   "name": "@aptoma/lambda-logger",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Module for logging to CloudWatch and Grimm from an AWS Lambda function",
   "license": "MIT",
   "main": "index.js",
