@@ -1,0 +1,30 @@
+{
+  "name": "@aptoma/lambda-logger",
+  "version": "0.0.1",
+  "description": "Module for logging to CloudWatch and Grimm from an AWS Lambda function",
+  "license": "MIT",
+  "main": "index.js",
+  "author": "Gunnar Lium <gunnar@aptoma.com>",
+  "engines": {
+    "node": "4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aptoma/lambda-logger.git"
+  },
+  "scripts": {
+    "ci": "eslint index.js lib && mocha lib/**.test.js",
+    "release": "release-it -n -i patch",
+    "release:minor": "release-it -n -i minor",
+    "release:major": "release-it -n -i major",
+    "test": "mocha lib/**.test.js",
+    "watch": "mocha --watch 'lib/**/*.test.js' --timeout 500 -G"
+  },
+  "devDependencies": {
+    "@aptoma/eslint-config": "^4.0.0",
+    "chai": "^3.5.0",
+    "eslint": "^2.5.3",
+    "mocha": "^2.5.3",
+    "testdouble": "^1.4.3"
+  }
+}
