@@ -29,6 +29,7 @@ const log = createLogger('my-service-name');
 
 const timer = require('@aptoma/node-timer');
 const elapsed = timer('SomeEvent');
+
 // Do something slow ...
 
 log.timerEvent(elapsed());
